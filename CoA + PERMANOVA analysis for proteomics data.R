@@ -1,10 +1,10 @@
 ############################################################
 # PCoA + PERMANOVA analysis for proteomics data
-# Author: [Your Name]
+# Author: Xu Liu
 #
 # Description:
 #   This script performs:
-#     1) Bray¨CCurtis distance calculation
+#     1) BrayÂ¨CCurtis distance calculation
 #     2) Principal Coordinates Analysis (PCoA)
 #     3) PERMANOVA (adonis2) to test group differences
 #     4) Publication-quality PCoA visualization
@@ -52,7 +52,7 @@ head(otu)
 
 
 ############################
-# 4. Calculate Bray¨CCurtis distance
+# 4. Calculate BrayÂ¨CCurtis distance
 ############################
 # Commonly used for ecological / proteomic compositional data
 otu.distance <- vegdist(otu, method = "bray")
@@ -144,4 +144,5 @@ ggsave("PCoA_bray.png", p, width = 8, height = 8, dpi = 300)
 
 ############################################################
 # End of script
+
 ############################################################
